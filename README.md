@@ -4,7 +4,7 @@
 
 1. ```git clone```
 2. ```yarn``` / ```npm i```
-3. ```yarn add gulp-cli -g``` / ```npm i gulp-cli -g```
+3. ```yarn global add gulp-cli``` / ```npm i gulp-cli -g```
 4. ```gulp```
 5. Navigate to your localhost address
 (default is http://localhost:3000/)
