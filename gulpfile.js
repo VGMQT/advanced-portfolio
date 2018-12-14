@@ -29,7 +29,6 @@ $.gulp.task('build',
       'css:vendor',
       'sass',
       'js:vendor',
-      // 'js:app-lint',
       'js:app-minify',
       'fonts',
       'images'

@@ -1,20 +1,18 @@
 {
-  "name": "gulp-tasker",
+  "name": "advanced-portfolio",
   "version": "1.0.0",
-  "description": "Easy editable gulp build with a flexible and convenient choice of tasks to run",
+  "description": "Portfolio",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VGMQT/gulp-tasker.git"
+    "url": "git+https://github.com/VGMQT/advanced-portfolio.git"
   },
   "keywords": [
-    "gulp",
-    "task runner",
-    "builder"
+    "portfolio"
   ],
   "author": "Vlad Gerasimovich <vg.email.2@gmail.com>",
   "license": "MIT",
-  "bugs": "https://github.com/VGMQT/gulp-tasker/issues",
-  "homepage": "https://github.com/VGMQT/gulp-tasker",
+  "bugs": "https://github.com/VGMQT/advanced-portfolio/issues",
+  "homepage": "https://github.com/VGMQT/advanced-portfolio",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "del": "~3.0.0",
