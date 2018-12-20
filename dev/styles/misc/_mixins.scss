@@ -1,0 +1,59 @@
+// Retina
+@mixin retina {
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
+  screen and (min-resolution: 144dpi) {
+    @content;
+  }
+}
+
+// Prefixes
+@mixin trans($prop: all, $time: .3s) {
+  -webkit-transition: $prop $time;
+  -moz-transition: $prop time;
+  -ms-transition: $prop time;
+  -o-transition: $prop time;
+  transition: $prop time;
+}
+
+// Fonts
+@mixin font($style: regular) {
+  @if $style == sansus {
+    font-family:  "Sansus Webissimo Regular", sans-serif;
+  }
+
+  @if $style == light {
+    font-family: "Roboto Light", sans-serif;
+  }
+
+  @if $style == light-italic {
+    font-family: "Roboto Light Italic", sans-serif italic;
+  }
+
+  @if $style == regular {
+    font-family: "Roboto Regular", sans-serif;
+  }
+
+  @if $style == regular-italic {
+    font-family: "Roboto Regular Italic", sans-serif italic;
+  }
+
+  @if $style == medium {
+    font-family: "Roboto Medium", sans-serif;
+  }
+
+  @if $style == medium-italic {
+    font-family: "Roboto Medium Italic", sans-serif italic;
+  }
+
+  @if $style == bold {
+    font-family: "Roboto Bold", sans-serif;
+  }
+
+  @if $style == bold-italic {
+    font-family: "Roboto Bold Italic", sans-serif italic;
+  }
+
+  @if $style == aw {
+    font-family: "Font Awesome";
+  }
+}
