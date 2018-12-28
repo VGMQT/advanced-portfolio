@@ -6,6 +6,7 @@
   @include brs();
   overflow: hidden;
   max-width: 140px;
+  margin: 0 auto 30px;
 
   &__img {
     display: block;
@@ -15,5 +16,40 @@
 }
 
 .title {
-  font-weight: 500;
+  @include font(medium);
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 28px;
+  color: $main_color;
+}
+
+.desc {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main_color;
+}
+
+.scroll-down {
+  width: 100%;
+  padding-bottom: 80px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .scroll-down__svg {
+      opacity: 1;
+    }
+  }
+
+  &__svg {
+    @include trans();
+    display: block;
+    max-width: 26px;
+    max-height: 16px;
+    margin: 0 auto;
+    fill: $main_color;
+    opacity: .7;
+  }
 }
