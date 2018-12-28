@@ -1,5 +1,7 @@
-mixin socials(items)
-    ul.socials
-        each item in items
-            li.socials__item
-                a(class="socials__link" href="#")= item
+mixin links(className, items, links, svgs)
+    ul(class=`${className}`)
+        - for (var i = 0; i < items.length; i++)
+            li(class=`${className}__item`)
+                a(class=`${className}__link` href=links[i] target="_blank" title=`${items[i]}`)
+                    svg(class=`${className}__svg`)
+                        use(xlink:href="images/sprites/svg/sprite.svg#" + `${svgs[i]}`)

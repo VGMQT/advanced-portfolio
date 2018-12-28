@@ -9,7 +9,6 @@ global.$ = {
   gp: require('gulp-load-plugins')(),
   del: require('del'),
   browserSync: require('browser-sync').create(),
-  buffer: require('vinyl-buffer'),
   merge: require('merge-stream')
 };
 
@@ -24,7 +23,6 @@ $.gulp.task('build',
     'svg:sprite',
 
     $.gulp.parallel(
-      // 'html',
       'pug',
       'css:vendor',
       'sass',

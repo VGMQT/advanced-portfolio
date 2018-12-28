@@ -15,6 +15,12 @@
   transition: $prop time;
 }
 
+@mixin brs($radius: 50%) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
 // Fonts
 @mixin font($style: regular) {
   @if $style == sansus {
@@ -51,9 +57,5 @@
 
   @if $style == bold-italic {
     font-family: "Roboto Bold Italic", sans-serif italic;
-  }
-
-  @if $style == aw {
-    font-family: "Font Awesome";
   }
 }

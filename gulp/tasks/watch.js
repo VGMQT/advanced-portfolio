@@ -8,6 +8,6 @@ module.exports = function() {
     // $.gulp.watch($.config.dev + '/*.html', $.gulp.series('html'));
     $.gulp.watch($.config.dev + '/pug/**/*.pug', $.gulp.series('pug'));
     $.gulp.watch($.config.dev + '/fonts/**/*.*', $.gulp.series('fonts'));
-    $.gulp.watch($.config.dev + '/images/**/*.*', $.gulp.series($.gulp.parallel('images:sprite','svg:sprite'),'images'));
+    $.gulp.watch($.config.dev + '/images/**/*.*', $.gulp.series('images'));
   });
 };

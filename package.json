@@ -35,8 +35,7 @@
     "gulp-svg-sprite": "~1.5.0",
     "gulp-svgmin": "~2.1.0",
     "gulp.spritesmith": "^6.9.0",
-    "merge-stream": "^1.0.1",
-    "vinyl-buffer": "^1.0.1"
+    "merge-stream": "^1.0.1"
   },
   "dependencies": {
     "jquery": "~3.3.1",

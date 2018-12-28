@@ -7,4 +7,18 @@ block content
     section.hero
         .container
             header.header
-                +socials(["vk", "tw"])
+                +links(
+                    "socials",
+                    ["VK", "GitHub", "LinkedIn"],
+                    ["https://vk.com/vgmqt", "https://github.com/VGMQT", "https://www.linkedin.com/in/vgmqt"],
+                    ["vk", "github", "in"]
+                )
+                button.burger
+                    svg(class="burger__svg")
+                        use(xlink:href="images/sprites/svg/sprite.svg#menu")
+            .author
+                div.avatar
+                    img.avatar__img(src="images/VG Logo.png" alt="Avatar")
+                h2.title Vlad Gerasimovich
+                p.desc A Front-End Web developer
+            button.scroll-down Scroll down

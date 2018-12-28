@@ -12,6 +12,7 @@ module.exports = [
   './gulp/tasks/js.app-minify.js',
   './gulp/tasks/fonts.js',
   './gulp/tasks/images.js',
+  './gulp/tasks/images.minify.js',
   './gulp/tasks/watch.js',
   './gulp/tasks/serve.js'
 ];

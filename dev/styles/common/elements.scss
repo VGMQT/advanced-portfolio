@@ -1,0 +1,19 @@
+.container {
+  padding: 0 10px;
+}
+
+.avatar {
+  @include brs();
+  overflow: hidden;
+  max-width: 140px;
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.title {
+  font-weight: 500;
+}
