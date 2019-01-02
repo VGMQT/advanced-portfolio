@@ -10,5 +10,5 @@ mixin title(title, svg)
     .title-wrapper
         - for (var i = 0; i < title.length; i++)
             svg.title-wrapper__svg
-                use(xlink:href="images/sprites/svg/sprite.svg" + `${svg[i]}`)
+                use(xlink:href="images/sprites/svg/sprite.svg#" + `${svg[i]}`)
             h1.title= `${title[i]}`
