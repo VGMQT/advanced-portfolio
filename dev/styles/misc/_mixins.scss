@@ -21,6 +21,27 @@
   border-radius: $radius;
 }
 
+// Actions
+@mixin center($axis: default) {
+  position: absolute;
+
+  @if $axis == default {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @if $axis == ver {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  @if $axis == hor {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
 // Fonts
 @mixin font($style: regular) {
   @if $style == sansus {

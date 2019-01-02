@@ -20,8 +20,13 @@ $.path.tasks.forEach(function(taskPath) {
 $.gulp.task('build',
   $.gulp.series(
     'clean',
-    'images:sprite',
-    'svg:sprite',
+
+    $.gulp.parallel(
+      'images:sprite',
+      'svg:sprite',
+    ),
+
+    'images:minify',
 
     $.gulp.parallel(
       'pug',

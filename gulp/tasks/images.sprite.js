@@ -12,7 +12,7 @@ module.exports = function() {
 
     const cssStream = spriteData.css
       .pipe($.gp.csso())
-      .pipe($.gulp.dest($.config.dev + '/styles/sprite'));
+      .pipe($.gulp.dest($.config.dev + '/styles/misc'));
 
     return $.merge(cssStream);
   });

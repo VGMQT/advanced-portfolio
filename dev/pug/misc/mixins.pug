@@ -5,3 +5,10 @@ mixin links(className, items, links, svgs)
                 a(class=`${className}__link` href=links[i] target="_blank" title=`${items[i]}`)
                     svg(class=`${className}__svg`)
                         use(xlink:href="images/sprites/svg/sprite.svg#" + `${svgs[i]}`)
+
+mixin title(title, svg)
+    .title-wrapper
+        - for (var i = 0; i < title.length; i++)
+            svg.title-wrapper__svg
+                use(xlink:href="images/sprites/svg/sprite.svg" + `${svg[i]}`)
+            h1.title= `${title[i]}`

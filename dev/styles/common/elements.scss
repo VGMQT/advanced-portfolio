@@ -1,3 +1,19 @@
+body {
+  background: $bg_color;
+}
+
+p {
+  @include font(regular);
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .container {
   padding: 0 10px;
 }
@@ -15,7 +31,7 @@
   }
 }
 
-.title {
+.subtitle {
   @include font(medium);
   padding-bottom: 5px;
   text-align: center;
@@ -69,4 +85,32 @@
   &__right {
     fill: $bg_color;
   }
+}
+
+.title {
+  @include font(sansus);
+  position: relative;
+  padding-bottom: 15px;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 42px;
+  color: $bold_color;
+
+  &:after {
+    @include center(hor);
+    bottom: 0;
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: $dark-accent_color;
+    content: '';
+  }
+}
+
+.title_sm {
+  font-size: 21px;
+  line-height: 28px;
+  color: $dark-accent_color;
 }

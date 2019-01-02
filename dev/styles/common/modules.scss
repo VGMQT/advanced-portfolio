@@ -68,3 +68,17 @@
 .author {
   padding: 75px 0 155px;
 }
+
+// About
+.title-wrapper {
+  position: relative;
+}
+
+.title-wrapper__svg {
+  @include center();
+  top: 20%;
+  display: block;
+  max-width: 200px;
+  max-height: 70px;
+  fill: rgba($acid-accent_color, .1);
+}
