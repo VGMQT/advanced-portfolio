@@ -1,0 +1,13 @@
+{
+  "socials__titles": [
+    "VK", "GitHub", "LinkedIn"
+  ],
+
+  "socials__hrefs": [
+    "https://vk.com/vgmqt", "https://github.com/VGMQT", "https://www.linkedin.com/in/vgmqt"
+  ],
+
+  "socials__svgs": [
+    "vk", "github", "in"
+  ]
+}

@@ -6,21 +6,6 @@ block title
 block content
     section.hero
         .container
-            header.header
-                +links(
-                    "socials",
-                    ["VK", "GitHub", "LinkedIn"],
-                    ["https://vk.com/vgmqt", "https://github.com/VGMQT", "https://www.linkedin.com/in/vgmqt"],
-                    ["vk", "github", "in"]
-                )
-                button.burger
-                    svg(class="burger__svg")
-                        use(xlink:href="images/sprites/svg/sprite.svg#menu")
-            .author
-                div.avatar
-                    img.avatar__img(src="images/VG Logo.png" alt="Avatar")
-                h2.title Vlad Gerasimovich
-                p.desc A Front-End developer
-            button.scroll-down
-                svg(class="scroll-down__svg")
-                    use(xlink:href="images/sprites/svg/sprite.svg#arrow_down")
+            include ../modules/header
+            include ../modules/author
+        include ../elements/scroll-down-triangles

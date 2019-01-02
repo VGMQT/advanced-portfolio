@@ -9,7 +9,8 @@ global.$ = {
   gp: require('gulp-load-plugins')(),
   del: require('del'),
   browserSync: require('browser-sync').create(),
-  merge: require('merge-stream')
+  merge: require('merge-stream'),
+  fs: require('fs')
 };
 
 $.path.tasks.forEach(function(taskPath) {
