@@ -7,7 +7,7 @@ p {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
-  color: $text-color;
+  color: $text_color;
 
   &:last-child {
     margin-bottom: 0;
@@ -38,6 +38,10 @@ p {
   font-size: 21px;
   line-height: 28px;
   color: $main_color;
+}
+
+.subtitle_dark-accent_color {
+  color: $dark-accent_color;
 }
 
 .desc {

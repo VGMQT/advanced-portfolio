@@ -9,5 +9,30 @@
 
   "socials__svgs": [
     "vk", "github", "in"
+  ],
+
+  "skills": [
+    {
+      "Front-End": [
+        {"HTML5": ["85"]},
+        {"CSS3": ["75"]},
+        {"JavaScript & jQuery": ["55"]}
+      ]
+    },
+    {
+      "Back-End": [
+        {"php": ["5"]},
+        {"MySQL": ["10"]},
+        {"Node.js": ["0"]},
+        {"MongoDB": ["0"]}
+      ]
+    },
+    {
+      "Workflow": [
+        {"Git": ["60"]},
+        {"gulp.js": ["80"]},
+        {"Yarn": ["70"]}
+      ]
+    }
   ]
 }

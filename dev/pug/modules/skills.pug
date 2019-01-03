@@ -1,0 +1,14 @@
+ul.skills
+    each areas in skills
+        each skills__list, area in areas
+            li.skills__area
+                .subtitle.subtitle_dark-accent_color= area
+                ul.skills__list
+                    each skill in skills__list
+                        each skill__percentage, skill__title in skill
+                            li.skills__item
+                                svg.skills__svg(viewBox='0 0 130 130')
+                                    circle.skills__svg-circle-skeleton(r='45', cx='50%', cy='50%', fill='none')
+                                    circle.skills__svg-circle.circle-55(r='55', cx='50%', cy='50%', transform='rotate(-90 65 65)')
+                                .skills__title= skill__title
+                                .skills__percentage= skill__percentage
