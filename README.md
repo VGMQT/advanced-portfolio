@@ -48,8 +48,8 @@ An advanced version of the portfolio, designed by © Loftschool.
 ```
 
 #### License
-Copyright © 2018, based on Loftschool 2017 Web Advanced course.
+Copyright © 2018-2019, based on Loftschool 2017 Web Advanced course.
 
-© 2017 - 2018 Loftschool.
+© 2017 - 2019 Loftschool.
 
 Licensed under the MIT license.
