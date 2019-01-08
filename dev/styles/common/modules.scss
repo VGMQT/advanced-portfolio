@@ -30,6 +30,25 @@
   }
 }
 
+.socials_grey-white_color {
+  .socials__link {
+    &:hover,
+    &:focus {
+      .socials__svg {
+        fill: $main_color;
+      }
+    }
+  }
+
+  .socials__svg {
+    fill: rgba($main_color, .5);
+  }
+}
+
+.socials_center {
+  justify-content: center;
+}
+
 // Title
 .title-wrapper {
   position: relative;
@@ -42,6 +61,44 @@
   max-width: 200px;
   max-height: 70px;
   fill: rgba($acid-accent_color, .1);
+}
+
+// Nav
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__link {
+    @include font(medium);
+    @include trans();
+    display: block;
+    color: $main_color;
+
+    &:hover,
+    &:focus {
+      color: $bright-accent_color;
+    }
+  }
+}
+
+.nav_compact {
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 10px;
+
+  .nav__item {
+    margin: 0 10px 10px 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .nav__link {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 // Header
@@ -163,7 +220,8 @@
   display: flex;
   align-items: center;
 
-  &:hover {
+  &:hover,
+  &:focus {
     .contacts__svg {
       transform: scale(1.2);
     }
@@ -184,4 +242,61 @@
   font-size: 16px;
   line-height: 24px;
   color: rgba($text-secondary_color, .8);
+}
+
+// Footer
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  &__general {
+    padding: 20px 10px;
+    background: rgba($bold_color, .85);
+
+    &-summary {
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba($main_color, .2);
+      text-align: center;
+
+      p {
+        @include font(light);
+        color: $main_color;
+      }
+    }
+
+    &-links {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba($main_color, .2);
+    }
+
+    &-quote {
+      padding-top: 20px;
+      text-align: center;
+
+      blockquote,
+      p,
+      span {
+        @include font(light-italic);
+        margin-bottom: 5px;
+        color: rgba($main_color, .5);
+      }
+
+      .quote-author {
+        @include font(bold-italic);
+      }
+    }
+  }
+
+  &__copyright {
+    padding: 20px 10px;
+    text-align: center;
+    background: rgba($fill_color, .85);
+
+    p {
+      @include font(light);
+      margin-bottom: 5px;
+      color: $main_color;
+    }
+  }
 }

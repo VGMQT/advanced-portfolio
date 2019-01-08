@@ -35,6 +35,6 @@ mixin nav(className, modificators)
     - modificators = modificators || ""
     nav(class=`${className} ${modificators}`)
         each item in nav
-            li(class=`${className}__item`)
-                each text, link in item
+            each text, link in item
+                li(class=`${className}__item`)
                     a(class=`${className}__link` href=link)= text

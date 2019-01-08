@@ -53,7 +53,7 @@
   }
 
   @if $style == light-italic {
-    font-family: "Roboto Light Italic", sans-serif italic;
+    font-family: "Roboto Light Italic", sans-serif, italic;
   }
 
   @if $style == regular {
@@ -61,7 +61,7 @@
   }
 
   @if $style == regular-italic {
-    font-family: "Roboto Regular Italic", sans-serif italic;
+    font-family: "Roboto Regular Italic", sans-serif, italic;
   }
 
   @if $style == medium {
@@ -69,7 +69,7 @@
   }
 
   @if $style == medium-italic {
-    font-family: "Roboto Medium Italic", sans-serif italic;
+    font-family: "Roboto Medium Italic", sans-serif, italic;
   }
 
   @if $style == bold {
@@ -77,6 +77,6 @@
   }
 
   @if $style == bold-italic {
-    font-family: "Roboto Bold Italic", sans-serif italic;
+    font-family: "Roboto Bold Italic", sans-serif, italic;
   }
 }

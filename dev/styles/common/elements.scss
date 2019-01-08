@@ -2,7 +2,9 @@ body {
   background: $bg_color;
 }
 
-p {
+p,
+blockquote,
+span {
   @include font(regular);
   margin-bottom: 20px;
   font-size: 14px;

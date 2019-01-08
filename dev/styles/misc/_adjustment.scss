@@ -13,8 +13,8 @@ html {
 html,
 body {
   @include font(regular);
+  position: relative;
   width: 100%;
-  height: 100%;
 }
 
 body {
@@ -97,6 +97,10 @@ fieldset {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+blockquote {
+  margin: 0;
 }
 
 footer {
