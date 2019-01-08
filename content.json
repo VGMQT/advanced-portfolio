@@ -1,14 +1,20 @@
 {
-  "socials__titles": [
-    "VK", "GitHub", "LinkedIn"
-  ],
-
-  "socials__hrefs": [
-    "https://vk.com/vgmqt", "https://github.com/VGMQT", "https://www.linkedin.com/in/vgmqt"
-  ],
-
-  "socials__svgs": [
-    "vk", "github", "in"
+  "socials": [
+    {
+      "VK": [{
+        "https://vk.com/vgmqt": ["vk"]
+      }]
+    },
+    {
+      "GitHub": [{
+        "https://github.com/VGMQT": ["github"]
+      }]
+    },
+    {
+      "LinkedIn": [{
+        "https://www.linkedin.com/in/vgmqt": ["in"]
+      }]
+    }
   ],
 
   "skills": [
@@ -33,6 +39,30 @@
         {"gulp.js": ["80"]},
         {"Yarn": ["70"]}
       ]
+    }
+  ],
+
+  "contacts": [
+    {
+      "Skype": [{
+        "skype:vg.email.2@gmail.com": [{
+          "skype": ["vg.email.2@gmail.com"]
+        }]
+      }]
+    },
+    {
+      "E-Mail address": [{
+        "mailto:vg.email.2@gmail.com": [{
+          "mail": ["vg.email.2@gmail.com"]
+        }]
+      }]
+    },
+    {
+      "Phone number": [{
+        "tel:+375299653457": [{
+          "tel": ["+375 (29) 965-34-57"]
+        }]
+      }]
     }
   ]
 }

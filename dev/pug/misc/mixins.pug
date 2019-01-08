@@ -1,10 +1,13 @@
-mixin links(className, items, links, svgs)
+mixin socials(className)
     ul(class=`${className}`)
-        - for (var i = 0; i < items.length; i++)
-            li(class=`${className}__item`)
-                a(class=`${className}__link` href=links[i] target="_blank" title=`${items[i]}`)
-                    svg(class=`${className}__svg`)
-                        use(xlink:href="images/sprites/svg/sprite.svg#" + `${svgs[i]}`)
+        each item in socials
+            each attrs, title in item
+                li(class=`${className}__item`)
+                    each attr in attrs
+                        each svg, link in attr
+                            a(class=`${className}__link` href=link target="_blank" title=title)
+                                svg(class=`${className}__svg`)
+                                    use(xlink:href="images/sprites/svg/sprite.svg#" + svg)
 
 mixin title(title, svg)
     .title-wrapper
@@ -12,3 +15,17 @@ mixin title(title, svg)
             svg.title-wrapper__svg
                 use(xlink:href="images/sprites/svg/sprite.svg#" + `${svg[i]}`)
             h1.title= `${title[i]}`
+
+mixin contacts(className)
+    ul(class=`${className}`)
+        each item in contacts
+            each attrs, title in item
+                li(class=`${className}__item`)
+                    each attr in attrs
+                        each content_object, link in attr
+                            a(class=`${className}__link` href=link title=title)
+                                each content in content_object
+                                    each text, svg in content
+                                        svg(class=`${className}__svg`)
+                                            use(xlink:href="images/sprites/svg/sprite.svg#" + svg)
+                                        span(class=`${className}__text`)= text
