@@ -1,5 +1,6 @@
-mixin socials(className)
-    ul(class=`${className}`)
+mixin socials(className, modificators)
+    - modificators = modificators || ""
+    ul(class=`${className} ${modificators}`)
         each item in socials
             each attrs, title in item
                 li(class=`${className}__item`)
@@ -29,3 +30,11 @@ mixin contacts(className)
                                         svg(class=`${className}__svg`)
                                             use(xlink:href="images/sprites/svg/sprite.svg#" + svg)
                                         span(class=`${className}__text`)= text
+
+mixin nav(className, modificators)
+    - modificators = modificators || ""
+    nav(class=`${className} ${modificators}`)
+        each item in nav
+            li(class=`${className}__item`)
+                each text, link in item
+                    a(class=`${className}__link` href=link)= text

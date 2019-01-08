@@ -1,11 +1,4 @@
-// Header
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
+// Socials
 .socials {
   display: flex;
 
@@ -35,6 +28,28 @@
     max-height: 25px;
     fill: $main_color;
   }
+}
+
+// Title
+.title-wrapper {
+  position: relative;
+}
+
+.title-wrapper__svg {
+  @include center();
+  top: 20%;
+  display: block;
+  max-width: 200px;
+  max-height: 70px;
+  fill: rgba($acid-accent_color, .1);
+}
+
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .burger {
@@ -70,19 +85,8 @@
 }
 
 // About
-.title-wrapper {
-  position: relative;
-}
 
-.title-wrapper__svg {
-  @include center();
-  top: 20%;
-  display: block;
-  max-width: 200px;
-  max-height: 70px;
-  fill: rgba($acid-accent_color, .1);
-}
-
+// Skills
 .skills {
   margin-top: 30px;
 }
@@ -144,4 +148,40 @@
 
 .skills__percentage {
   display: none;
+}
+
+// Contacts
+.contacts {
+  padding: 0 30px 30px;
+}
+
+.contacts__item {
+  margin-bottom: 25px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .contacts__svg {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.contacts__svg {
+  @include trans(all, .8s);
+  display: block;
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 10px;
+  fill: $svg-accent_color;
+}
+
+.contacts__text {
+  @include font(medium);
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba($text-secondary_color, .8);
 }

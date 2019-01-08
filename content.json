@@ -53,16 +53,30 @@
     {
       "E-Mail address": [{
         "mailto:vg.email.2@gmail.com": [{
-          "mail": ["vg.email.2@gmail.com"]
+          "envelope": ["vg.email.2@gmail.com"]
         }]
       }]
     },
     {
       "Phone number": [{
         "tel:+375299653457": [{
-          "tel": ["+375 (29) 965-34-57"]
+          "phone": ["+375 (29) 965-34-57"]
+        }]
+      }]
+    },
+    {
+      "Address": [{
+        "https://yandex.by/maps/-/CBRZmGcaoB": [{
+          "map_marker": ["Belarus, Minsk, Skryganova Street 6A"]
         }]
       }]
     }
-  ]
+  ],
+
+  "nav": [{
+    "#1": ["Мои работы"],
+    "#2": ["Обо мне"],
+    "#3": ["Блог"],
+    "#4": ["Авторизация"]
+  }]
 }
