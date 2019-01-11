@@ -1,0 +1,56 @@
+// Footer
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  &__general {
+    padding: 20px 10px;
+    background: rgba($bold_color, .85);
+
+    &-summary {
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba($main_color, .2);
+      text-align: center;
+
+      p {
+        @include font(light);
+        color: $main_color;
+      }
+    }
+
+    &-links {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba($main_color, .2);
+    }
+
+    &-quote {
+      padding-top: 20px;
+      text-align: center;
+
+      blockquote,
+      p,
+      span {
+        @include font(light-italic);
+        margin-bottom: 5px;
+        color: rgba($main_color, .5);
+      }
+
+      .quote-author {
+        @include font(bold-italic);
+      }
+    }
+  }
+
+  &__copyright {
+    padding: 20px 10px;
+    text-align: center;
+    background: rgba($fill_color, .85);
+
+    p {
+      @include font(light);
+      margin-bottom: 5px;
+      color: $main_color;
+    }
+  }
+}

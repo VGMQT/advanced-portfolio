@@ -1,0 +1,32 @@
+.title {
+  @include font(sansus);
+  position: relative;
+  padding-bottom: 15px;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 42px;
+  color: $bold_color;
+
+  &:after {
+    @include center(hor);
+    bottom: 0;
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: $dark-accent_color;
+    content: '';
+  }
+
+  // Modificators
+  &_sm {
+    font-size: 21px;
+    line-height: 28px;
+    color: $dark-accent_color;
+  }
+
+  &_dark-accent_color {
+    color: $dark-accent_color;
+  }
+}

@@ -1,0 +1,12 @@
+.title-wrapper {
+  position: relative;
+
+  &__svg {
+    @include center();
+    top: 20%;
+    display: block;
+    max-width: 200px;
+    max-height: 70px;
+    fill: rgba($acid-accent_color, .1);
+  }
+}

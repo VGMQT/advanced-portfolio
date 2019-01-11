@@ -35,6 +35,7 @@ An advanced version of the portfolio, designed by © Loftschool.
     "gulp-rename": "^1.4.0",
     "gulp-replace": "~1.0.0",
     "gulp-sass": "~4.0.2",
+    "gulp-sass-glob": "^1.0.9",
     "gulp-sourcemaps": "~2.6.0",
     "gulp-svg-sprite": "~1.5.0",
     "gulp-svgmin": "~2.1.0",

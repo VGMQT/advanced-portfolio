@@ -1,0 +1,14 @@
+.triangles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  &__left {
+    fill: $bg_color;
+  }
+
+  &__right {
+    fill: $bg_color;
+  }
+}

@@ -1,0 +1,13 @@
+.map {
+  min-height: 1150px;
+  background: url("../images/map.jpg") 65% 0 no-repeat;
+
+  &__title.title {
+    padding-top: 30px;
+    margin-top: 0;
+  }
+
+  &__contacts {
+    background: rgba($layout-block_color, .85);
+  }
+}

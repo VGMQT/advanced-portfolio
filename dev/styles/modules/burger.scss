@@ -1,0 +1,19 @@
+.burger {
+  display: block;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .burger__svg {
+      fill: $accent_color;
+    }
+  }
+
+  &__svg {
+    @include trans();
+    display: block;
+    max-width: 26px;
+    max-height: 26px;
+    fill: $main_color;
+  }
+}

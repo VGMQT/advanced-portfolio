@@ -1,0 +1,35 @@
+.contacts {
+  padding: 0 30px 30px;
+
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      .contacts__svg {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__svg {
+    @include trans(all, .8s);
+    display: block;
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 10px;
+    fill: $svg-accent_color;
+  }
+
+  &__text {
+    @include font(medium);
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba($text-secondary_color, .8);
+  }
+}

@@ -1,0 +1,17 @@
+body {
+  background: $bg_color;
+}
+
+p,
+blockquote,
+span {
+  @include font(regular);
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text_color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

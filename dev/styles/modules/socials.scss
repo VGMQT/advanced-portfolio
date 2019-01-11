@@ -1,0 +1,52 @@
+.socials {
+  display: flex;
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    &:hover,
+    &:focus {
+      .socials__svg {
+        fill: $accent_color;
+      }
+    }
+  }
+
+  &__svg {
+    @include trans();
+    display: block;
+    max-width: 25px;
+    max-height: 25px;
+    fill: $main_color;
+  }
+
+  // Modificators
+  &_grey-white_color {
+    .socials {
+      &__link {
+        &:hover,
+        &:focus {
+          .socials__svg {
+            fill: $main_color;
+          }
+        }
+      }
+
+      &__svg {
+        fill: rgba($main_color, .5);
+      }
+    }
+  }
+
+  &_center {
+    justify-content: center;
+  }
+}

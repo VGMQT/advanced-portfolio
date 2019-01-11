@@ -1,0 +1,62 @@
+.skills {
+  margin-top: 30px;
+
+  &__area {
+    margin-bottom: 10px;
+
+    .subtitle {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__svg {
+    stroke-width: 20;
+    fill: none;
+
+    &-circle-skeleton {
+      stroke: $skeleton_color;
+    }
+
+    &-circle {
+      stroke: $fill_color;
+      //stroke-dasharray: 0.01 345.4;
+      stroke-dasharray: 120 345.4;
+      transition: all 1s;
+    }
+  }
+
+  &__title {
+    @include center();
+    @include font(medium);
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    color: $bright-accent_color;
+  }
+
+  &__percentage {
+    display: none;
+  }
+}

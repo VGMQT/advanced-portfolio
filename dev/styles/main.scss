@@ -5,8 +5,7 @@
 @import "misc/adjustment";
 
 // Common
-@import "common/elements";
-@import "common/modules";
+@import "common/tags";
 
-// Pages
-@import "pages/about";
+// Modules
+@import "modules/**/*";

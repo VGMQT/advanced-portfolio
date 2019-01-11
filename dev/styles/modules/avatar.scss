@@ -1,0 +1,10 @@
+.avatar {
+  @include brs();
+  overflow: hidden;
+  max-width: 140px;
+  margin: 0 auto 30px;
+
+  &__img {
+    @include img();
+  }
+}

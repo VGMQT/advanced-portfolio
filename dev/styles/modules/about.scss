@@ -1,0 +1,22 @@
+.about {
+  background: $bg-secondary_color;
+
+  &__intro {
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    background: $bg-accent_color;
+
+    p {
+      color: $dark-accent_color;
+    }
+  }
+
+  &__photo {
+    max-width: 100%;
+    margin-bottom: 30px;
+
+    &-img {
+      @include img();
+    }
+  }
+}

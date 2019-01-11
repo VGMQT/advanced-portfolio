@@ -1,0 +1,13 @@
+.subtitle {
+  @include font(medium);
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 28px;
+  color: $main_color;
+
+  // Modificators
+  &_dark-accent_color {
+    color: $dark-accent_color;
+  }
+}

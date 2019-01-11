@@ -8,7 +8,7 @@ block content
         .container
             include ../modules/header
             include ../modules/author
-        include ../elements/scroll-down-triangles
+        include ../modules/scroll-down--triangles
     section.about
         +title(
             ["About me"],
@@ -16,7 +16,7 @@ block content
         )
         .about__intro
             .about__photo
-                img.photo__img(src="images/photo.jpg" alt="Photo")
+                img.about__photo-img(src="images/photo.jpg" alt="Photo")
             .container
                 h2.title.title_sm Who am I
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis cumque ducimus eligendi error esse ex excepturi expedita id illo ipsum laborum, laudantium magni minima modi molestiae obcaecati odio odit perspiciatis praesentium quam quas quasi quisquam, sed tempora totam vero voluptatibus? Alias ducimus eius expedita harum molestiae necessitatibus officiis sit!
@@ -28,6 +28,6 @@ block content
                 include ../modules/skills
     section.map
         .map__contacts
-            h2.title.title_dark-accent_color Contacts
+            h2.map__title.title.title_dark-accent_color Contacts
             +contacts("contacts")
     include ../modules/footer

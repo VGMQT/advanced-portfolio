@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__link {
+    @include font(medium);
+    @include trans();
+    display: block;
+    color: $main_color;
+
+    &:hover,
+    &:focus {
+      color: $bright-accent_color;
+    }
+  }
+
+  // Modificators
+  &_compact.nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    .nav {
+      &__item {
+        margin: 0 10px 10px 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &__link {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+}
