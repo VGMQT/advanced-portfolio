@@ -7,21 +7,21 @@
 }
 
 // Actions
-@mixin center($axis: default) {
+@mixin center($axis: xy) {
   position: absolute;
 
-  @if $axis == default {
+  @if $axis == xy {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  @if $axis == ver {
+  @if $axis == x {
     top: 50%;
     transform: translate(0, -50%);
   }
 
-  @if $axis == hor {
+  @if $axis == y {
     left: 50%;
     transform: translate(-50%, 0);
   }

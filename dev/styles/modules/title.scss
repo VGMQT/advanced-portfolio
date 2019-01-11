@@ -10,7 +10,7 @@
   color: $bold_color;
 
   &:after {
-    @include center(hor);
+    @include center(x);
     bottom: 0;
     display: block;
     width: 55px;
