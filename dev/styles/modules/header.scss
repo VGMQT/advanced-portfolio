@@ -1,6 +1,11 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  width: 100%;
+  padding: 10px;
 }

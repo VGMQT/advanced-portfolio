@@ -5,9 +5,10 @@ block title
 
 block content
     section.hero
-        .container
-            include ../modules/header
-            include ../modules/author
+        .hero__bg
+            img(class="hero__bg-img" src="images/water.jpg" alt="Background with a forest lake")
+        include ../modules/header
+        include ../modules/author
         include ../modules/scroll-down--triangles
     section.about
         +title(

@@ -1,6 +1,13 @@
 .hero {
   position: relative;
-  background: url("../images/water.jpg") center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
+
+  &__bg {
+    overflow: hidden;
+    height: 600px;
+
+    &-img {
+      display: block;
+      max-height: 100%;
+    }
+  }
 }
