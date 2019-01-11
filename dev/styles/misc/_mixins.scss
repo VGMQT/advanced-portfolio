@@ -6,21 +6,6 @@
   }
 }
 
-// Prefixes
-@mixin trans($prop: all, $time: .3s) {
-  -webkit-transition: $prop $time;
-  -moz-transition: $prop $time;
-  -ms-transition: $prop $time;
-  -o-transition: $prop $time;
-  transition: $prop $time;
-}
-
-@mixin brs($radius: 50%) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
-}
-
 // Actions
 @mixin center($axis: default) {
   position: absolute;

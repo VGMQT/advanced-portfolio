@@ -10,10 +10,10 @@
   }
 
   &__svg {
-    @include trans();
     display: block;
     max-width: 26px;
     max-height: 26px;
     fill: $main_color;
+    transition: all .3s;
   }
 }

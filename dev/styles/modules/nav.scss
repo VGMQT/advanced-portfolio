@@ -5,9 +5,9 @@
 
   &__link {
     @include font(medium);
-    @include trans();
     display: block;
     color: $main_color;
+    transition: all .3s;
 
     &:hover,
     &:focus {

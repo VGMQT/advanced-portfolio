@@ -21,11 +21,11 @@
   }
 
   &__svg {
-    @include trans();
     display: block;
     max-width: 25px;
     max-height: 25px;
     fill: $main_color;
+    transition: all .3s;
   }
 
   // Modificators

@@ -18,12 +18,12 @@
   }
 
   &__svg {
-    @include trans(all, .8s);
     display: block;
     max-width: 25px;
     max-height: 25px;
     margin-right: 10px;
     fill: $svg-accent_color;
+    transition: all .8s;
   }
 
   &__text {
