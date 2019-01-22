@@ -8,13 +8,13 @@ mixin socials(className, modificators)
                         each svg, link in attr
                             a(class=`${className}__link` href=link target="_blank" title=title)
                                 svg(class=`${className}__svg`)
-                                    use(xlink:href="images/sprites/svg/sprite.svg#" + svg)
+                                    use(xlink:href="images/sprites/sprite.svg#" + svg)
 
 mixin title(title, svg)
     .title-wrapper
         - for (var i = 0; i < title.length; i++)
             svg.title-wrapper__svg
-                use(xlink:href="images/sprites/svg/sprite.svg#" + `${svg[i]}`)
+                use(xlink:href="images/sprites/sprite.svg#" + `${svg[i]}`)
             h1.title= `${title[i]}`
 
 mixin contacts(className)
@@ -28,7 +28,7 @@ mixin contacts(className)
                                 each content in content_object
                                     each text, svg in content
                                         svg(class=`${className}__svg`)
-                                            use(xlink:href="images/sprites/svg/sprite.svg#" + svg)
+                                            use(xlink:href="images/sprites/sprite.svg#" + svg)
                                         span(class=`${className}__text`)= text
 
 mixin nav(className, modificators)

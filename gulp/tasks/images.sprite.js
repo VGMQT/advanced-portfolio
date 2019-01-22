@@ -2,18 +2,21 @@
 
 module.exports = function() {
   $.gulp.task('images:sprite', function() {
-    const spriteData = $.gulp.src($.config.dev + '/images/sprites/png/*.png')
-      .pipe($.gp.spritesmith({
+    const spriteData = $.gulp.src(
+        $.config.dev + '/images/sprites/png/*.png'
+    ).pipe(
+        $.gp.spritesmith({
         imgName: 'sprite.png',
+        imgPath: '../images/sprites/sprite.png',
         cssName: 'sprite.scss',
-        imgPath: '/images/sprites/png/sprite.png',
-        cssFormat: 'scss'
-      }));
+        cssFormat: 'css',
+        padding: 70
+      })
+    );
 
-    const cssStream = spriteData.css
-      .pipe($.gp.csso())
-      .pipe($.gulp.dest($.config.dev + '/styles/misc'));
+    const imgStream = spriteData.img.pipe($.gulp.dest($.config.build + '/images/sprites'));
+    const cssStream = spriteData.css.pipe($.gulp.dest($.config.dev + '/styles/misc'));
 
-    return $.merge(cssStream);
+    return $.merge(imgStream, cssStream);
   });
 };
