@@ -1,13 +1,3 @@
 .hero {
   position: relative;
-
-  &__bg {
-    overflow: hidden;
-    height: 600px;
-
-    &-img {
-      display: block;
-      max-height: 100%;
-    }
-  }
 }

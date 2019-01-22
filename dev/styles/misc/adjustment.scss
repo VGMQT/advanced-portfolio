@@ -7,13 +7,16 @@ $container_width: 1740px;
 }
 
 html {
+  // Stick the footer with a dynamic height to the bottom of a page
+  position: relative;
+  min-height: 100%;
+  //-
   font-size: 16px;
 }
 
 html,
 body {
   @include font(regular);
-  position: relative;
   width: 100%;
 }
 

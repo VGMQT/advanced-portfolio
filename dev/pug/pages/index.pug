@@ -1,0 +1,12 @@
+extends ../layout/_layout
+
+block title
+    title Welcome!
+
+block content
+    .main-bg.main-bg_welcome
+        img(class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake")
+    main.welcome
+        button.btn.btn_auth Log in
+        header.welcome__header
+    include ../modules/footer
