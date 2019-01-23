@@ -1,3 +1,15 @@
 .hero {
   position: relative;
+
+  &__main-bg {
+    height: 600px;
+  }
+
+  &__author {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 120px;
+  }
 }

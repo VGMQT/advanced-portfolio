@@ -1,8 +1,9 @@
 .socials {
   display: flex;
+  flex-wrap: wrap;
 
   &__item {
-    margin-right: 30px;
+    margin: 5px 30px 5px 0;
 
     &:last-child {
       margin-right: 0;
@@ -29,7 +30,15 @@
   }
 
   // Modificators
-  &_color_grey-white {
+  &_fill_grey {
+    .socials {
+      &__svg {
+        fill: rgba($main_color, .5);
+      }
+    }
+  }
+
+  &_fill_grey-white {
     .socials {
       &__link {
         &:hover,

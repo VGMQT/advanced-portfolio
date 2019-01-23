@@ -10,6 +10,14 @@ mixin socials(className, modificators)
                                 svg(class=`${className}__svg`)
                                     use(xlink:href="images/sprites/sprite.svg#" + svg)
 
+mixin author(additionalClasses)
+    - additionalClasses = additionalClasses || ""
+    .author(class=`${additionalClasses}`)
+        include ../modules/avatar
+        h3.subtitle Vlad Gerasimovich
+        .desc
+            p A Front-End developer
+
 mixin title(title, svg)
     .title-wrapper
         - for (var i = 0; i < title.length; i++)
@@ -31,10 +39,36 @@ mixin contacts(className)
                                             use(xlink:href="images/sprites/sprite.svg#" + svg)
                                         span(class=`${className}__text`)= text
 
-mixin nav(className, modificators)
+mixin nav(className, modificators, items)
     - modificators = modificators || ""
     nav(class=`${className} ${modificators}`)
-        each item in nav
+        each item in items
             each text, link in item
                 li(class=`${className}__item`)
                     a(class=`${className}__link` href=link)= text
+
+mixin main-bg(additionalClasses)
+    - additionalClasses = additionalClasses || ""
+    .main-bg(class =`${additionalClasses}`)
+        img(class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake")
+
+mixin footer(copyrightModificators)
+    - copyrightModificators = copyrightModificators || ""
+    footer.footer
+        if !copyrightModificators
+            .footer__general
+                .footer__general-summary
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                .footer__general-links
+                    +nav("nav", "nav_compact", nav)
+                    +socials("socials", "socials_center socials_fill_grey-white")
+                .footer__general-quote
+                    blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aspernatur, consequatur corporis et omnis sequi tenetur!
+                    span.quote-author — Lorem ipsum.
+        .footer__copyright(class=`${copyrightModificators}`)
+            p &copy; Lorem ipsum.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, excepturi.
+
+mixin btn_auth(additionalClasses)
+    - additionalClasses = additionalClasses || ""
+    button.btn.btn_auth(class=`${additionalClasses}`) Log in

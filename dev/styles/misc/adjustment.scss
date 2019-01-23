@@ -107,7 +107,12 @@ blockquote {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 footer {
+  width: 100%;
   // Stick the footer with a dynamic height to the bottom of a page
   margin-top: auto;
   //-

@@ -8,8 +8,8 @@ module.exports = function() {
       .pipe($.gp.sass()).on('error', $.gp.notify.onError({ title: 'Styles' }))
       .pipe($.gp.autoprefixer({ browsers: $.config.prefixBrowsers }))
       .pipe($.gp.csso())
-      .pipe($.gp.rename('main.min.css'))
       .pipe($.gp.sourcemaps.write())
+      .pipe($.gp.rename('main.min.css'))
       .pipe($.gulp.dest($.config.build + '/css'))
       .pipe($.browserSync.stream());
   });

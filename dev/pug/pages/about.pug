@@ -5,10 +5,9 @@ block title
 
 block content
     section.hero
-        .main-bg.main-bg_hero
-            img(class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake")
+        +main-bg("hero__main-bg")
         include ../modules/header
-        include ../modules/author
+        +author("hero__author")
         include ../modules/scroll-down--triangles
     section.about
         +title(
@@ -31,4 +30,4 @@ block content
         .map__contacts
             h2.map__title.title.title_color_dark-accent Contacts
             +contacts("contacts")
-    include ../modules/footer
+    +footer

@@ -20,7 +20,7 @@
     }
 
     &-links {
-      padding: 15px 0;
+      padding: 15px 0 10px;
       border-bottom: 1px solid rgba($main_color, .2);
     }
 
@@ -51,6 +51,10 @@
       @include font(light);
       margin-bottom: 5px;
       color: $main_color;
+    }
+
+    &_background_transparent {
+      background: transparent;
     }
   }
 }

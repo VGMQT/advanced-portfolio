@@ -4,9 +4,12 @@ block title
     title Welcome!
 
 block content
-    .main-bg.main-bg_welcome
-        img(class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake")
+    +main-bg("welcome__main-bg")
     main.welcome
-        button.btn.btn_auth Log in
+        +btn_auth("welcome__btn_desktop")
         header.welcome__header
-    include ../modules/footer
+            +btn_auth("welcome__btn_mobile")
+            +author("welcome__author")
+            +socials("socials", "socials_fill_grey socials_center welcome__socials")
+            +nav("nav", "welcome__nav", welcome__nav)
+    +footer("footer__copyright_background_transparent")

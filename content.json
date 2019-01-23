@@ -74,9 +74,15 @@
   ],
 
   "nav": [{
-    "#1": ["My works"],
-    "#2": ["About me"],
-    "#3": ["Blog"],
-    "#4": ["Authorization"]
+    "/works.html": ["My works"],
+    "/about.html": ["About me"],
+    "/blog.html": ["Blog"],
+    "/index.html": ["Authorization"]
+  }],
+
+  "welcome__nav": [{
+    "/works.html": ["My works"],
+    "/about.html": ["About me"],
+    "/blog.html": ["Blog"]
   }]
 }
