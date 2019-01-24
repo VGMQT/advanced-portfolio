@@ -29,40 +29,82 @@
 		<link rel="stylesheet" href="css/main.min.css">
 	</head>
 	<body>
-		<div class="main-bg welcome__main-bg"><img class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake"/></div>
-		<main class="welcome">
-			<button class="btn btn_auth welcome__btn_desktop">Log in</button>
-			<header class="welcome__header">
-				<button class="btn btn_auth welcome__btn_mobile">Log in</button>
-				<div class="author welcome__author">
-					<div class="avatar"><img class="avatar__img" src="images/VG Logo.png" alt="Avatar"/></div>
-					<h3 class="subtitle">Vlad Gerasimovich</h3>
-					<div class="desc">
-						<p>A Front-End developer</p>
+		<main class="lobby">
+			<div class="main-bg lobby__main-bg"><img class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake"/></div>
+			<button class="btn btn_auth lobby__btn">Log in</button>
+			<header class="lobby__header">
+				<div class="welcome">
+					<button class="btn btn_auth welcome__btn">Log in</button>
+					<div class="author welcome__author">
+						<div class="avatar"><img class="avatar__img" src="images/VG Logo.png" alt="Avatar"/></div>
+						<h3 class="subtitle">Vlad Gerasimovich</h3>
+						<div class="desc">
+							<p>A Front-End developer</p>
+						</div>
 					</div>
+					<ul class="socials socials_fill_grey socials_center welcome__socials">
+						<li class="socials__item"><a class="socials__link" href="https://vk.com/vgmqt" target="_blank" title="VK">
+								<svg class="socials__svg">
+									<use xlink:href="images/sprites/sprite.svg#vk"></use>
+								</svg></a>
+						</li>
+						<li class="socials__item"><a class="socials__link" href="https://github.com/VGMQT" target="_blank" title="GitHub">
+								<svg class="socials__svg">
+									<use xlink:href="images/sprites/sprite.svg#github"></use>
+								</svg></a>
+						</li>
+						<li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/in/vgmqt" target="_blank" title="LinkedIn">
+								<svg class="socials__svg">
+									<use xlink:href="images/sprites/sprite.svg#in"></use>
+								</svg></a>
+						</li>
+					</ul>
+					<nav class="nav lobby__nav">
+						<li class="nav__item"><a class="nav__link" href="works.html">My works</a></li>
+						<li class="nav__item"><a class="nav__link" href="about.html">About me</a></li>
+						<li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
+					</nav>
 				</div>
-				<ul class="socials socials_fill_grey socials_center welcome__socials">
-					<li class="socials__item"><a class="socials__link" href="https://vk.com/vgmqt" target="_blank" title="VK">
-							<svg class="socials__svg">
-								<use xlink:href="images/sprites/sprite.svg#vk"></use>
-							</svg></a>
-					</li>
-					<li class="socials__item"><a class="socials__link" href="https://github.com/VGMQT" target="_blank" title="GitHub">
-							<svg class="socials__svg">
-								<use xlink:href="images/sprites/sprite.svg#github"></use>
-							</svg></a>
-					</li>
-					<li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/in/vgmqt" target="_blank" title="LinkedIn">
-							<svg class="socials__svg">
-								<use xlink:href="images/sprites/sprite.svg#in"></use>
-							</svg></a>
-					</li>
-				</ul>
-				<nav class="nav welcome__nav">
-					<li class="nav__item"><a class="nav__link" href="/works.html">My works</a></li>
-					<li class="nav__item"><a class="nav__link" href="/about.html">About me</a></li>
-					<li class="nav__item"><a class="nav__link" href="/blog.html">Blog</a></li>
-				</nav>
+				<div class="auth">
+					<h2 class="title title_color_main auth__title">Log in</h2>
+					<form class="form form_center auth__form">
+						<div class="fieldset">
+							<input class="input input_no-left-radius" type="text" id="login" name="login" placeholder="Login">
+							<label class="input-image input-image_login" for="login">
+								<svg class="input-image__svg">
+									<use xlink:href="images/sprites/sprite.svg#login"></use>
+								</svg>
+							</label>
+						</div>
+						<div class="fieldset">
+							<input class="input input_no-left-radius" type="password" id="password" name="password" placeholder="Password">
+							<label class="input-image input-image_password" for="password">
+								<svg class="input-image__svg">
+									<use xlink:href="images/sprites/sprite.svg#password"></use>
+								</svg>
+							</label>
+						</div>
+						<div class="fieldset">
+							<input class="checkbox" type="checkbox" id="human" name="human">
+							<label class="label" for="human">I'm a human</label>
+						</div>
+						<div class="fieldset">
+							<legend class="legend">Are you sure, you are not a robot?</legend>
+							<div class="fieldset">
+								<input class="radio" type="radio" id="yes" name="notRobot" value="yes">
+								<label class="label" for="yes">Yes</label>
+							</div>
+							<div class="fieldset">
+								<input class="radio" type="radio" id="no" name="notRobot" value="no" checked>
+								<label class="label" for="no">Not sure</label>
+							</div>
+						</div>
+					</form>
+					<nav class="nav lobby__nav">
+						<li class="nav__item"><a class="nav__link" href="1">Return</a></li>
+						<li class="nav__item"><a class="nav__link" href="2">Log in</a></li>
+					</nav>
+				</div>
 			</header>
 		</main>
 		<footer class="footer">

@@ -19,7 +19,6 @@
     content: '';
   }
 
-  // Modificators
   &_sm {
     font-size: 21px;
     line-height: 28px;
@@ -28,5 +27,13 @@
 
   &_color_dark-accent {
     color: $dark-accent_color;
+  }
+
+  &_color_main {
+    color: $main_color;
+
+    &:after {
+      background-color: $main_color;
+    }
   }
 }

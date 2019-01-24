@@ -4,12 +4,17 @@ block title
     title Welcome!
 
 block content
-    +main-bg("welcome__main-bg")
-    main.welcome
-        +btn_auth("welcome__btn_desktop")
-        header.welcome__header
-            +btn_auth("welcome__btn_mobile")
-            +author("welcome__author")
-            +socials("socials", "socials_fill_grey socials_center welcome__socials")
-            +nav("nav", "welcome__nav", welcome__nav)
+    main.lobby
+        +main-bg("lobby__main-bg")
+        +btn_auth("lobby__btn")
+        header.lobby__header
+            .welcome
+                +btn_auth("welcome__btn")
+                +author("welcome__author")
+                +socials("socials", "socials_fill_grey socials_center welcome__socials")
+                +nav("nav", "lobby__nav", welcome__nav)
+            .auth
+                h2.title.title_color_main.auth__title Log in
+                include ../modules/auth__form
+                +nav("nav", "lobby__nav", auth__nav)
     +footer("footer__copyright_background_transparent")

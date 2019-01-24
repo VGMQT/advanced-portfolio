@@ -1,0 +1,6 @@
+.legend {
+  @include font(medium);
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba($main_color, .8);
+}

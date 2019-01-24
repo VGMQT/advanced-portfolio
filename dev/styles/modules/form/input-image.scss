@@ -1,0 +1,23 @@
+.input-image {
+  position: relative;
+  order: -1;
+  display: block;
+  width: 45px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background: $input-image-bg_color;
+
+  &__svg {
+    @include center();
+    fill: $input-image_color;
+    transition: all .3s;
+  }
+
+  &_login,
+  &_password {
+    .input-image__svg {
+      max-width: 15px;
+      max-height: 17px;
+    }
+  }
+}

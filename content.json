@@ -74,15 +74,20 @@
   ],
 
   "nav": [{
-    "/works.html": ["My works"],
-    "/about.html": ["About me"],
-    "/blog.html": ["Blog"],
-    "/index.html": ["Authorization"]
+    "works.html": ["My works"],
+    "about.html": ["About me"],
+    "blog.html": ["Blog"],
+    "index.html": ["Authorization"]
   }],
 
   "welcome__nav": [{
-    "/works.html": ["My works"],
-    "/about.html": ["About me"],
-    "/blog.html": ["Blog"]
+    "works.html": ["My works"],
+    "about.html": ["About me"],
+    "blog.html": ["Blog"]
+  }],
+
+  "auth__nav": [{
+    "1": ["Return"],
+    "2": ["Log in"]
   }]
 }
