@@ -29,6 +29,121 @@
 		<link rel="stylesheet" href="css/main.min.css">
 	</head>
 	<body>
+		<section class="hero">
+			<div class="main-bg hero__main-bg"><img class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake"/></div>
+			<header class="header">
+				<ul class="socials ">
+					<li class="socials__item"><a class="socials__link" href="https://vk.com/vgmqt" target="_blank" title="VK">
+							<svg class="socials__svg">
+								<use xlink:href="images/sprites/sprite.svg#vk"></use>
+							</svg></a>
+					</li>
+					<li class="socials__item"><a class="socials__link" href="https://github.com/VGMQT" target="_blank" title="GitHub">
+							<svg class="socials__svg">
+								<use xlink:href="images/sprites/sprite.svg#github"></use>
+							</svg></a>
+					</li>
+					<li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/in/vgmqt" target="_blank" title="LinkedIn">
+							<svg class="socials__svg">
+								<use xlink:href="images/sprites/sprite.svg#in"></use>
+							</svg></a>
+					</li>
+				</ul>
+				<button class="burger">
+					<svg class="burger__svg">
+						<use xlink:href="images/sprites/sprite.svg#menu"></use>
+					</svg>
+				</button>
+			</header>
+			<div class="intro hero__intro">
+				<div class="avatar"><img class="avatar__img" src="images/VG Logo.png" alt="Avatar"/></div>
+				<h1 class="title title_color_main">Блог</h1>
+				<div class="desc">
+					<p>Articles, I've written.</p>
+				</div>
+			</div>
+			<button class="scroll-down">
+				<svg class="scroll-down__svg">
+					<use xlink:href="images/sprites/sprite.svg#arrow_down"></use>
+				</svg>
+			</button>
+			<svg class="triangles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none">
+				<polygon class="triangles__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+				<polygon class="triangles__right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+			</svg>
+		</section>
+		<section class="blog">
+			<article class="article">
+				<h2 class="subtitle subtitle_left subtitle_color_dark-accent">Blogpost #2</h2>
+				<time class="post-date" datetime="2019-02-01 19:00">February 1st, 2019</time>
+				<div class="article__content">
+					<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit</em>. Culpa eaque, nemo. Ab accusamus accusantium aliquam consequuntur distinctio, dolor doloremque ea error expedita facilis in inventore ipsam ipsum iste magnam magni neque nostrum obcaecati omnis perspiciatis porro praesentium quasi qui quos ratione reiciendis saepe, sit tempora temporibus unde vel vitae voluptatum.</p>
+					<p><a href="#" title="link">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum delectus eaque eligendi esse laboriosam laborum pariatur quibusdam reiciendis sapiente, veritatis. Accusamus architecto beatae delectus eligendi quod? Cumque est illum necessitatibus, quae qui quo sequi vel? Aspernatur aut autem commodi consequatur cupiditate debitis, dolor dolore eius eos eveniet exercitationem explicabo in itaque maxime mollitia natus obcaecati omnis quam quas quis, recusandae repellendus rerum sequi sunt tempora tempore, tenetur unde! Beatae corporis cumque distinctio dolorum eaque explicabo maxime modi quae quasi quisquam, quos ratione temporibus ullam? Accusantium, consequatur debitis doloribus laborum maiores nulla, perspiciatis porro quaerat recusandae suscipit velit!</p><code>
+						mixin socials(className, modificators)
+						    - modificators = modificators || ""
+						    ul(class=`${className} ${modificators}`)
+						        each item in socials
+						            each attrs, title in item
+						                li(class=`${className}__item`)
+						                    each attr in attrs
+						                        each svg, link in attr
+						                            a(class=`${className}__link` href=link target="_blank" title=title)
+						                                svg(class=`${className}__svg`)
+						                                    use(xlink:href="images/sprites/sprite.svg#" + svg)</code>
+				</div>
+			</article>
+			<article class="article">
+				<h2 class="subtitle subtitle_left subtitle_color_dark-accent">Blogpost #1</h2>
+				<time class="post-date" datetime="2019-01-01 19:00">January 1st, 2019</time>
+				<div class="article__content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eaque, nemo. Ab accusamus accusantium aliquam consequuntur distinctio, dolor doloremque ea error expedita facilis in inventore ipsam ipsum iste magnam magni neque nostrum obcaecati omnis perspiciatis porro praesentium quasi qui quos ratione reiciendis saepe, sit tempora temporibus unde vel vitae voluptatum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum delectus eaque eligendi esse laboriosam laborum pariatur quibusdam reiciendis sapiente, veritatis. Accusamus architecto beatae delectus eligendi quod? Cumque est illum necessitatibus, quae qui quo sequi vel? Aspernatur aut autem commodi consequatur cupiditate debitis, dolor dolore eius eos eveniet exercitationem explicabo in itaque maxime mollitia natus obcaecati omnis quam quas quis, recusandae repellendus rerum sequi sunt tempora tempore, tenetur unde! Beatae corporis cumque distinctio dolorum eaque explicabo maxime modi quae quasi quisquam, quos ratione temporibus ullam? Accusantium, consequatur debitis doloribus laborum maiores nulla, perspiciatis porro quaerat recusandae suscipit velit!</p>
+				</div>
+			</article>
+		</section>
+		<footer class="footer">
+			<div class="footer__general">
+				<div class="footer__general-summary">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="footer__general-links">
+					<nav class="nav nav_compact">
+						<li class="nav__item"><a class="nav__link" href="works.html">My works</a>
+						</li>
+						<li class="nav__item"><a class="nav__link" href="about.html">About me</a>
+						</li>
+						<li class="nav__item"><a class="nav__link" href="blog.html">Blog</a>
+						</li>
+						<li class="nav__item"><a class="nav__link" href="index.html">Authorization</a>
+						</li>
+					</nav>
+					<ul class="socials socials_center socials_fill_grey-white">
+						<li class="socials__item"><a class="socials__link" href="https://vk.com/vgmqt" target="_blank" title="VK">
+								<svg class="socials__svg">
+									<use xlink:href="images/sprites/sprite.svg#vk"></use>
+								</svg></a>
+						</li>
+						<li class="socials__item"><a class="socials__link" href="https://github.com/VGMQT" target="_blank" title="GitHub">
+								<svg class="socials__svg">
+									<use xlink:href="images/sprites/sprite.svg#github"></use>
+								</svg></a>
+						</li>
+						<li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/in/vgmqt" target="_blank" title="LinkedIn">
+								<svg class="socials__svg">
+									<use xlink:href="images/sprites/sprite.svg#in"></use>
+								</svg></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__general-quote">
+					<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aspernatur, consequatur corporis et omnis sequi tenetur!</blockquote><span class="quote-author">— Lorem ipsum.</span>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<p>&copy; Lorem ipsum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, excepturi.</p>
+			</div>
+		</footer>
 		<script src="/js/vendor.min.js" defer></script>
 		<script src="/js/app.min.js" defer></script><!--[if lt IE 9]>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
