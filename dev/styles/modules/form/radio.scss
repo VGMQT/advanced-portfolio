@@ -16,4 +16,13 @@
       }
     }
   }
+
+  &:hover,
+  &:focus {
+    + .label_radio {
+      &:before {
+        border-color: $fill_color;
+      }
+    }
+  }
 }
