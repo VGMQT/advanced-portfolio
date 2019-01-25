@@ -1,0 +1,8 @@
+.post-date {
+  @include font(regular);
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba($bright-accent_color, .7);
+}

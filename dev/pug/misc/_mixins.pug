@@ -10,13 +10,19 @@ mixin socials(className, modificators)
                                 svg(class=`${className}__svg`)
                                     use(xlink:href="images/sprites/sprite.svg#" + svg)
 
-mixin author(additionalClasses)
+mixin intro(additionalClasses, title, titleClasses, desc)
     - additionalClasses = additionalClasses || ""
-    .author(class=`${additionalClasses}`)
+    - title = title || "Vlad Gerasimovich"
+    - titleClasses = titleClasses || "subtitle"
+    - desc = desc || "A Front-End developer"
+    .intro(class=`${additionalClasses}`)
         include ../modules/avatar
-        h3.subtitle Vlad Gerasimovich
+        if title === "Vlad Gerasimovich"
+            h3(class=`${titleClasses}`)= title
+        else
+            h1(class=`${titleClasses}`)= title
         .desc
-            p A Front-End developer
+            p= desc
 
 mixin title(title, svg)
     .title-wrapper
@@ -56,9 +62,10 @@ mixin main-bg(additionalClasses)
     .main-bg(class =`${additionalClasses}`)
         img(class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake")
 
-mixin footer(copyrightModificators)
+mixin footer(additionalClasses, copyrightModificators)
+    - additionalClasses = additionalClasses || ""
     - copyrightModificators = copyrightModificators || ""
-    footer.footer
+    footer.footer(class=`${additionalClasses}`)
         if !copyrightModificators
             .footer__general
                 .footer__general-summary

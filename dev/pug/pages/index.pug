@@ -10,10 +10,10 @@ block content
         header.lobby__header
             .welcome
                 +btn_auth("welcome__btn")
-                +author("welcome__author")
+                +intro("welcome__intro")
                 +socials("socials", "socials_fill_grey socials_center welcome__socials")
                 +nav("nav", "lobby__nav", welcome__nav)
             .auth
                 h2.title.title_color_main.auth__title Log in
                 include ../modules/auth__form
-    +footer("footer__copyright_background_transparent")
+    +footer("footer_absolute","footer__copyright_background_transparent")

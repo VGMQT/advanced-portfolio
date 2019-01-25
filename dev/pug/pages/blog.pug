@@ -4,3 +4,34 @@ block title
     title My blog
 
 block content
+    section.hero
+        +main-bg("hero__main-bg")
+        include ../modules/header
+        +intro("hero__intro", "Блог", "title title_color_main", "Articles, I've written.")
+        include ../modules/scroll-down--triangles
+    section.blog
+        article.article
+            h2.subtitle.subtitle_left.subtitle_color_dark-accent Blogpost #2
+            time.post-date(datetime="2019-02-01 19:00") February 1st, 2019
+            .article__content
+                p Lorem ipsum dolor sit amet, #[em consectetur adipisicing elit]. Culpa eaque, nemo. Ab accusamus accusantium aliquam consequuntur distinctio, dolor doloremque ea error expedita facilis in inventore ipsam ipsum iste magnam magni neque nostrum obcaecati omnis perspiciatis porro praesentium quasi qui quos ratione reiciendis saepe, sit tempora temporibus unde vel vitae voluptatum.
+                p #[a(href="#" title="link") Lorem ipsum] dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum delectus eaque eligendi esse laboriosam laborum pariatur quibusdam reiciendis sapiente, veritatis. Accusamus architecto beatae delectus eligendi quod? Cumque est illum necessitatibus, quae qui quo sequi vel? Aspernatur aut autem commodi consequatur cupiditate debitis, dolor dolore eius eos eveniet exercitationem explicabo in itaque maxime mollitia natus obcaecati omnis quam quas quis, recusandae repellendus rerum sequi sunt tempora tempore, tenetur unde! Beatae corporis cumque distinctio dolorum eaque explicabo maxime modi quae quasi quisquam, quos ratione temporibus ullam? Accusantium, consequatur debitis doloribus laborum maiores nulla, perspiciatis porro quaerat recusandae suscipit velit!
+                code.
+                    mixin socials(className, modificators)
+                        - modificators = modificators || ""
+                        ul(class=`${className} ${modificators}`)
+                            each item in socials
+                                each attrs, title in item
+                                    li(class=`${className}__item`)
+                                        each attr in attrs
+                                            each svg, link in attr
+                                                a(class=`${className}__link` href=link target="_blank" title=title)
+                                                    svg(class=`${className}__svg`)
+                                                        use(xlink:href="images/sprites/sprite.svg#" + svg)
+        article.article
+            h2.subtitle.subtitle_left.subtitle_color_dark-accent Blogpost #1
+            time.post-date(datetime="2019-01-01 19:00") January 1st, 2019
+            .article__content
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eaque, nemo. Ab accusamus accusantium aliquam consequuntur distinctio, dolor doloremque ea error expedita facilis in inventore ipsam ipsum iste magnam magni neque nostrum obcaecati omnis perspiciatis porro praesentium quasi qui quos ratione reiciendis saepe, sit tempora temporibus unde vel vitae voluptatum.
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid autem cum delectus eaque eligendi esse laboriosam laborum pariatur quibusdam reiciendis sapiente, veritatis. Accusamus architecto beatae delectus eligendi quod? Cumque est illum necessitatibus, quae qui quo sequi vel? Aspernatur aut autem commodi consequatur cupiditate debitis, dolor dolore eius eos eveniet exercitationem explicabo in itaque maxime mollitia natus obcaecati omnis quam quas quis, recusandae repellendus rerum sequi sunt tempora tempore, tenetur unde! Beatae corporis cumque distinctio dolorum eaque explicabo maxime modi quae quasi quisquam, quos ratione temporibus ullam? Accusantium, consequatur debitis doloribus laborum maiores nulla, perspiciatis porro quaerat recusandae suscipit velit!
+    +footer

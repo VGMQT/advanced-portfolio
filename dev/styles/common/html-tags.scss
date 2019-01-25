@@ -15,3 +15,27 @@ span {
     margin-bottom: 0 !important;
   }
 }
+
+em, strong, b, i {
+  @include font(medium);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 21px;
+  color: $bright-accent_color;
+}
+
+code {
+  overflow-x: scroll;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 1px;
+  font-size: 12px;
+  line-height: 22px;
+  white-space: pre;
+  color: $text_color;
+  background: rgba($bright-accent_color, .2);
+
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}

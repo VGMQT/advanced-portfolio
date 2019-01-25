@@ -7,7 +7,7 @@ block content
     section.hero
         +main-bg("hero__main-bg")
         include ../modules/header
-        +author("hero__author")
+        +intro("hero__intro")
         include ../modules/scroll-down--triangles
     section.about
         +title(
@@ -30,4 +30,4 @@ block content
         .map__contacts
             h2.title.title_color_dark-accent.map__title Contacts
             +contacts("contacts")
-    +footer
+    +footer("footer_absolute")

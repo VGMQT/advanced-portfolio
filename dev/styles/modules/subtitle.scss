@@ -1,10 +1,14 @@
 .subtitle {
   @include font(medium);
-  padding-bottom: 5px;
+  margin-bottom: 5px;
   text-align: center;
   font-size: 21px;
   line-height: 28px;
   color: $main_color;
+
+  &_left {
+    text-align: left;
+  }
 
   &_color_dark-accent {
     color: $dark-accent_color;
