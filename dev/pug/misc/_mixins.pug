@@ -39,13 +39,17 @@ mixin contacts(className)
                                             use(xlink:href="images/sprites/sprite.svg#" + svg)
                                         span(class=`${className}__text`)= text
 
-mixin nav(className, modificators, items)
-    - modificators = modificators || ""
-    nav(class=`${className} ${modificators}`)
+mixin nav(className, additionalClasses, items, buttons)
+    - additionalClasses = additionalClasses || ""
+    - buttons = buttons || ""
+    nav(class=`${className} ${additionalClasses}`)
         each item in items
             each text, link in item
                 li(class=`${className}__item`)
-                    a(class=`${className}__link` href=link)= text
+                    if !buttons
+                        a(class=`${className}__link` href=link)= text
+                    else
+                        button(class=`${className}__link` type=`${link}` value=`${text}`)= text
 
 mixin main-bg(additionalClasses)
     - additionalClasses = additionalClasses || ""

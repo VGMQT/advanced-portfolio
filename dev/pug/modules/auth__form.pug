@@ -1,22 +1,24 @@
 form.form.form_center.auth__form
-    div.fieldset
+    .fieldset.auth__fieldset
         input.input.input_no-left-radius(type="text" id="login" name="login" placeholder="Login")
         label(for="login").input-image.input-image_login
             svg.input-image__svg
                 use(xlink:href="images/sprites/sprite.svg#login")
-    div.fieldset
+    .fieldset.auth__fieldset
         input.input.input_no-left-radius(type="password" id="password" name="password" placeholder="Password")
         label(for="password").input-image.input-image_password
             svg.input-image__svg
                 use(xlink:href="images/sprites/sprite.svg#password")
-    div.fieldset
+    .fieldset.fieldset_center.auth__fieldset
         input.checkbox(type="checkbox" id="human" name="human")
-        label.label(for="human") I'm a human
-    div.fieldset
-        legend.legend Are you sure, you are not a robot?
-        div.fieldset
-            input.radio(type="radio" id="yes" name="notRobot" value="yes")
-            label.label(for="yes") Yes
-        div.fieldset
-            input.radio(type="radio" id="no" name="notRobot" value="no" checked)
-            label.label(for="no") Not sure
+        label.label.label_checkbox(for="human") I'm a human
+    .fieldset.fieldset_column.fieldset_no-margin.auth__fieldset
+        legend.legend.legend_center Are you sure, you are not a robot?
+        .fieldset.fieldset_center.fieldset_no-margin
+            .fieldset.fieldset_no-margin.fieldset_mright
+                input.radio(type="radio" id="yes" name="notRobot" value="yes")
+                label.label.label_radio(for="yes") Yes
+            .fieldset.fieldset_no-margin.fieldset_mright
+                input.radio(type="radio" id="no" name="notRobot" value="no" checked)
+                label.label.label_radio(for="no") Not sure
+    +nav("nav", "lobby__nav auth__nav", auth__nav, "buttons")

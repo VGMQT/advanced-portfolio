@@ -60,15 +60,18 @@
 						</li>
 					</ul>
 					<nav class="nav lobby__nav">
-						<li class="nav__item"><a class="nav__link" href="works.html">My works</a></li>
-						<li class="nav__item"><a class="nav__link" href="about.html">About me</a></li>
-						<li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
+						<li class="nav__item"><a class="nav__link" href="works.html">My works</a>
+						</li>
+						<li class="nav__item"><a class="nav__link" href="about.html">About me</a>
+						</li>
+						<li class="nav__item"><a class="nav__link" href="blog.html">Blog</a>
+						</li>
 					</nav>
 				</div>
 				<div class="auth">
 					<h2 class="title title_color_main auth__title">Log in</h2>
 					<form class="form form_center auth__form">
-						<div class="fieldset">
+						<div class="fieldset auth__fieldset">
 							<input class="input input_no-left-radius" type="text" id="login" name="login" placeholder="Login">
 							<label class="input-image input-image_login" for="login">
 								<svg class="input-image__svg">
@@ -76,7 +79,7 @@
 								</svg>
 							</label>
 						</div>
-						<div class="fieldset">
+						<div class="fieldset auth__fieldset">
 							<input class="input input_no-left-radius" type="password" id="password" name="password" placeholder="Password">
 							<label class="input-image input-image_password" for="password">
 								<svg class="input-image__svg">
@@ -84,26 +87,32 @@
 								</svg>
 							</label>
 						</div>
-						<div class="fieldset">
+						<div class="fieldset fieldset_center auth__fieldset">
 							<input class="checkbox" type="checkbox" id="human" name="human">
-							<label class="label" for="human">I'm a human</label>
+							<label class="label label_checkbox" for="human">I'm a human</label>
 						</div>
-						<div class="fieldset">
-							<legend class="legend">Are you sure, you are not a robot?</legend>
-							<div class="fieldset">
-								<input class="radio" type="radio" id="yes" name="notRobot" value="yes">
-								<label class="label" for="yes">Yes</label>
-							</div>
-							<div class="fieldset">
-								<input class="radio" type="radio" id="no" name="notRobot" value="no" checked>
-								<label class="label" for="no">Not sure</label>
+						<div class="fieldset fieldset_column fieldset_no-margin auth__fieldset">
+							<legend class="legend legend_center">Are you sure, you are not a robot?</legend>
+							<div class="fieldset fieldset_center fieldset_no-margin">
+								<div class="fieldset fieldset_no-margin fieldset_mright">
+									<input class="radio" type="radio" id="yes" name="notRobot" value="yes">
+									<label class="label label_radio" for="yes">Yes</label>
+								</div>
+								<div class="fieldset fieldset_no-margin fieldset_mright">
+									<input class="radio" type="radio" id="no" name="notRobot" value="no" checked>
+									<label class="label label_radio" for="no">Not sure</label>
+								</div>
 							</div>
 						</div>
+						<nav class="nav lobby__nav auth__nav">
+							<li class="nav__item">
+								<button class="nav__link" type="button" value="Return">Return</button>
+							</li>
+							<li class="nav__item">
+								<button class="nav__link" type="submit" value="Log in">Log in</button>
+							</li>
+						</nav>
 					</form>
-					<nav class="nav lobby__nav">
-						<li class="nav__item"><a class="nav__link" href="1">Return</a></li>
-						<li class="nav__item"><a class="nav__link" href="2">Log in</a></li>
-					</nav>
 				</div>
 			</header>
 		</main>

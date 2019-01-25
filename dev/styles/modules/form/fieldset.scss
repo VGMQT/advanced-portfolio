@@ -5,4 +5,24 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &_column {
+    flex-direction: column;
+  }
+
+  &_center {
+    justify-content: center;
+  }
+
+  &_no-margin {
+    margin-bottom: 0;
+  }
+
+  &_mright {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

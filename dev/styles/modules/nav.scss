@@ -6,6 +6,7 @@
   &__link {
     @include font(medium);
     display: block;
+    width: 100%;
     color: $main_color;
     transition: all .3s;
 

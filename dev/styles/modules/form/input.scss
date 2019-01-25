@@ -17,7 +17,7 @@
   &:focus {
     border-color: $fill_color;
 
-    & ~ .input-image {
+    & + .input-image {
       .input-image__svg {
         fill: $fill_color;
       }

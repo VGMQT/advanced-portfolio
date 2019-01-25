@@ -1,0 +1,19 @@
+.checkbox {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+
+  &:checked {
+    + .label_checkbox {
+      &:before {
+        border-color: $fill_color;
+        background: $fill_color;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}

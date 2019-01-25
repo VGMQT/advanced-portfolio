@@ -87,7 +87,7 @@
   }],
 
   "auth__nav": [{
-    "1": ["Return"],
-    "2": ["Log in"]
+    "button": ["Return"],
+    "submit": ["Log in"]
   }]
 }
