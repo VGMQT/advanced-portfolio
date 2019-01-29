@@ -1,0 +1,21 @@
+.slider
+    .slide
+        .slide__cover
+            .slide__pic
+                img.slide__pic-img(src="images/website1.png" alt="Website promo")
+        .slide__desc
+            h2.title.title_sm.title_no-top-margin Website title
+            ul.slide__techs
+                li.slide__techs-item HTML
+                li.slide__techs-item CSS
+                li.slide__techs-item JavaScript
+            a.btn.btn_link.slide__btn(href="#" target="_blank" title="Link to the website") Take a look
+        .slide__nav
+            .slide__nav-prev
+                button(type="button") Previous Slide
+                    svg
+                        use(xlink:href="images/sprites/sprite.svg#works_arrow_down")
+            .slide__nav-next
+                button(type="button") Next Slide
+                    svg
+                        use(xlink:href="images/sprites/sprite.svg#works_arrow_up")

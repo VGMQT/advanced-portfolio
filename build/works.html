@@ -29,6 +29,88 @@
 		<link rel="stylesheet" href="css/main.min.css">
 	</head>
 	<body>
+		<section class="hero">
+			<div class="main-bg hero__main-bg"><img class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake"/></div>
+			<header class="header">
+				<ul class="socials ">
+					<li class="socials__item"><a class="socials__link" href="https://vk.com/vgmqt" target="_blank" title="VK">
+							<svg class="socials__svg">
+								<use xlink:href="images/sprites/sprite.svg#vk"></use>
+							</svg></a>
+					</li>
+					<li class="socials__item"><a class="socials__link" href="https://github.com/VGMQT" target="_blank" title="GitHub">
+							<svg class="socials__svg">
+								<use xlink:href="images/sprites/sprite.svg#github"></use>
+							</svg></a>
+					</li>
+					<li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/in/vgmqt" target="_blank" title="LinkedIn">
+							<svg class="socials__svg">
+								<use xlink:href="images/sprites/sprite.svg#in"></use>
+							</svg></a>
+					</li>
+				</ul>
+				<button class="burger">
+					<svg class="burger__svg">
+						<use xlink:href="images/sprites/sprite.svg#menu"></use>
+					</svg>
+				</button>
+			</header>
+			<div class="intro hero__intro">
+				<div class="avatar"><img class="avatar__img" src="images/VG Logo.png" alt="Avatar"/></div>
+				<h3 class="subtitle">Vlad Gerasimovich</h3>
+				<div class="desc">
+					<p>A Front-End developer</p>
+				</div>
+			</div>
+			<button class="scroll-down">
+				<svg class="scroll-down__svg">
+					<use xlink:href="images/sprites/sprite.svg#arrow_down"></use>
+				</svg>
+			</button>
+			<svg class="triangles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none">
+				<polygon class="triangles__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+				<polygon class="triangles__right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+			</svg>
+		</section>
+		<section class="works">
+			<div class="title-wrapper">
+				<svg class="title-wrapper__svg">
+					<use xlink:href="images/sprites/sprite.svg#works"></use>
+				</svg>
+				<h1 class="title">My works</h1>
+			</div>
+			<div class="slider">
+				<div class="slide">
+					<div class="slide__cover">
+						<div class="slide__pic"><img class="slide__pic-img" src="images/website1.png" alt="Website promo"></div>
+					</div>
+					<div class="slide__desc">
+						<h2 class="title title_sm title_no-top-margin">Website title</h2>
+						<ul class="slide__techs">
+							<li class="slide__techs-item">HTML</li>
+							<li class="slide__techs-item">CSS</li>
+							<li class="slide__techs-item">JavaScript</li>
+						</ul><a class="btn btn_link slide__btn" href="#" target="_blank" title="Link to the website">Take a look</a>
+					</div>
+					<div class="slide__nav">
+						<div class="slide__nav-prev">
+							<button type="button">Previous Slide
+								<svg>
+									<use xlink:href="images/sprites/sprite.svg#works_arrow_down"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="slide__nav-next">
+							<button type="button">Next Slide
+								<svg>
+									<use xlink:href="images/sprites/sprite.svg#works_arrow_up"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<script src="/js/vendor.min.js" defer></script>
 		<script src="/js/app.min.js" defer></script><!--[if lt IE 9]>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->

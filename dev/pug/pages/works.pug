@@ -4,3 +4,14 @@ block title
     title My works
 
 block content
+    section.hero
+        +main-bg("hero__main-bg")
+        include ../modules/header
+        +intro("hero__intro")
+        include ../modules/scroll-down--triangles
+    section.works
+        +title(
+            ["My works"],
+            ["works"]
+        )
+        include ../modules/slider
