@@ -2,7 +2,7 @@
     .slide
         .slide__cover
             .slide__pic
-                img.slide__pic-img(src="images/website1.png" alt="Website promo")
+                img.slide__pic-img(src="images/website.png" alt="Website promo")
         .slide__desc
             h2.title.title_sm.title_no-top-margin Website title
             ul.slide__techs
@@ -10,12 +10,14 @@
                 li.slide__techs-item CSS
                 li.slide__techs-item JavaScript
             a.btn.btn_link.slide__btn(href="#" target="_blank" title="Link to the website") Take a look
-        .slide__nav
-            .slide__nav-prev
-                button(type="button") Previous Slide
-                    svg
-                        use(xlink:href="images/sprites/sprite.svg#works_arrow_down")
-            .slide__nav-next
-                button(type="button") Next Slide
-                    svg
-                        use(xlink:href="images/sprites/sprite.svg#works_arrow_up")
+    .slider__nav
+        button.slider__nav-button(type="button" name="Previous Slide")
+            .slider__nav-pic
+                img.slider__nav-img(src="images/website.png" alt="Website promo")
+            svg.slider__nav-svg
+                use(xlink:href="images/sprites/sprite.svg#works_arrow_down")
+        button.slider__nav-button(type="button" name="Next Slide")
+            .slider__nav-pic
+                img.slider__nav-img(src="images/website.png" alt="Website promo")
+            svg.slider__nav-svg
+                use(xlink:href="images/sprites/sprite.svg#works_arrow_up")

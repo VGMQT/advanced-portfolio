@@ -1,0 +1,37 @@
+.slider {
+  &__nav {
+    display: flex;
+
+    &-button {
+      position: relative;
+      display: block;
+      padding: 15px 20px;
+      background: $nav-bg_color;
+      transition: all .3s;
+
+      &:hover,
+      &:focus {
+        background: $nav-bg_hover_color;
+      }
+    }
+
+    &-pic {
+      position: relative;
+      max-width: 140px;
+      margin: 0 auto;
+      z-index: -1;
+    }
+
+    &-img {
+      @include img();
+    }
+
+    &-svg {
+      @include center();
+      display: block;
+      width: 43px;
+      height: 27px;
+      fill: $main_color;
+    }
+  }
+}
