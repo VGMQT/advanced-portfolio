@@ -1,6 +1,4 @@
 .welcome {
-  display: none;
-
   &__btn {
     @include center(x);
     top: -80px;

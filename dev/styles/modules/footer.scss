@@ -39,7 +39,7 @@
         color: rgba($main_color, .5);
       }
 
-      .quote-author {
+      span.footer__general-quote-author {
         @include font(bold-italic);
       }
     }
