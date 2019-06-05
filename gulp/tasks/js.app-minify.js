@@ -3,6 +3,9 @@
 module.exports = function() {
   $.gulp.task('js:app-minify', function() {
     return $.gulp.src($.config.appJS)
+      .pipe($.gp.babel({
+        presets: ['@babel/env']
+      }))
       .pipe($.gp.sourcemaps.init())
       .pipe($.gp.concat('app.js'))
       .pipe($.gp.minify({

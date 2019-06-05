@@ -58,7 +58,7 @@ mixin nav(className, additionalClasses, items, buttons)
                         button(class=`${className}__link` type=`${link}` value=`${text}`)= text
 
 mixin main-bg(additionalClasses)
-    - additionalClasses = additionalClasses || ""
+    - additionalClasses = additionalClasses || "hero__main-bg"
     .main-bg(class =`${additionalClasses}`)
         img(class="main-bg__img" src="images/water.jpg" alt="Background with a forest lake")
 

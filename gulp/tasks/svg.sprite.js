@@ -12,6 +12,10 @@ module.exports = function() {
         run: function ($) {
           $('[fill]').removeAttr('fill');
           $('[stroke]').removeAttr('stroke');
+          $('[stroke-width]').removeAttr('stroke-width');
+          $('[stroke-linecap]').removeAttr('stroke-linecap');
+          $('[stroke-linejoin]').removeAttr('stroke-linejoin');
+          $('[stroke-miterlimit]').removeAttr('stroke-miterlimit');
           $('[styles]').removeAttr('style');
         },
         parserOptions: { xmlMode: true }
